@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.ngslider {
+    position: relative;
+    padding: 5px;
+}
+
+.ngslider-inner {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.ngslider-inner .ngslides {
+    white-space: nowrap;
+    transition: .3s;
+}
+
+.ngslider-inner .ngslides>.ngitem {
+    display: inline-block;
+    width: 100%;
+    white-space: normal;
+}
+
+.ngslider-inner .ngslides>.ngitem img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ngslider-indicator {
+    width: auto;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.ngslider-indicator span {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 100%;
+    margin: 2px;
+}
+
+.ngslider-indicator span:hover,
+.ngslider-indicator span.active {
+    background-color: red;
+}
