@@ -55,3 +55,17 @@
         });
     }
 })();
+
+
+// var data = "Ali";
+class Data {
+    constructor(name) {
+        this.name = name;
+    }
+    retName() {
+        return this.name;
+    }
+}
+let name = new Data("Ali");
+
+console.log(name.retName.constructor.name);
